@@ -23,4 +23,4 @@ jobs:
       - name: Publish site to Kubernetes
         run: |
           KUBECONFIG=/home/user/.kube/config \
-          kubectl create -f $GITHUB_WORKSPACE/publisher.yaml
+          kubectl create -f $GITHUB_WORKSPACE/k3s/publisher-job.yaml
