@@ -8,7 +8,7 @@ on:
 
 jobs:
   publish:
-    runs-on: [self-hosted, mgmtjbox-web-test-runner]
+    runs-on: self-hosted
 
     steps:
       - name: Checkout repository
