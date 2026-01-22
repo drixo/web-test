@@ -1,0 +1,38 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  generateName: school-site-publisher-
+spec:
+  backoffLimit: 1
+  template:
+    spec:
+      ttlSecondsAfterFinished: 60
+      restartPolicy: Never
+      containers:
+        - name: publisher
+          image: alpine/git:latest
+          command:
+            - sh
+            - -c
+            - |
+              set -e
+
+              echo "Cloning repository..."
+              mkdir -p /work
+              git clone --depth 1 https://github.com/drixo/web-test.git /work
+
+              echo "Syncing files to PVC..."
+              rsync -a --delete /work/ /data/
+
+              echo "Publish complete."
+          volumeMounts:
+            - name: site-data
+              mountPath: /data
+            - name: workdir
+              mountPath: /work
+      volumes:
+        - name: site-data
+          persistentVolumeClaim:
+            claimName: school-site
+        - name: workdir
+          emptyDir: {}
