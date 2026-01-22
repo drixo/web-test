@@ -15,7 +15,8 @@ spec:
             - sh
             - -c
             - |
-              set -e
+              set -ex
+              apk add --no-cache rsync bash
 
               echo "Cloning repository..."
               mkdir -p /work
