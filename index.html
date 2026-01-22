@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layout-container">
+        <nav class="sidebar">
+            <div class="menu-header">
+                <h2 >Menu</h2>
+                <!-- Language switch button -->
+                <button id="lang-switch" class="lang-btn" title="Switch Language" data-i18n="switch_lang"></button>
+            </div>
+            <button onclick="loadContent('home.html')" data-i18n="home_page"></button>
+            <button onclick="loadContent('projects.html')" data-i18n="projects"></button>
+            <button onclick="loadContent('asset.html')" >Asset1</button>
+            <button onclick="loadContent('asset2.html')">Asset2</button>
+        </nav>
+        <main id="content-main">
+            <h1>Welcome</h1>
+            <p>Click an item on the left to load its content here.</p>
+        </main>
+    </div>
+    <script src="js/i18n.js"></script>
+    <script src="js/site.js"></script>
+    <script>
+        // Load saved language or default to English
+        loadLanguage(localStorage.getItem("lang") || "en");
+        loadContent('home.html')
+    </script>
+
+</body>
+</html>

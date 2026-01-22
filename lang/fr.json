@@ -1,0 +1,35 @@
+{
+    "switch_lang":"🌐En",
+
+    "__menu": "menu strings",
+    "home_page": "Page d’accueil",
+    "projects": "Projets",
+    "settings": "Paramètres",
+    
+    "__homepage": "Ce sont les chaînes de la page d’accueil",
+    "home_title": "Page d’accueil",
+    "home_p1": "Ceci est un paragraphe complet qui apparaît sur la page d’accueil. Il peut être aussi long que vous le souhaitez, il n’y a vraiment aucune limite.",
+    "home_p2": "Deuxième paragraphe sur la page d’accueil. Fin.",
+
+    "__projects_page": "text for projects page start here",
+    "projects_title": "Nos projets robotiques",
+    "projects_intro": "Voici quelques-uns des projets robotiques passionnants sur lesquels notre équipe a travaillé.",
+    
+    "project1_title": "Robot de livraison autonome",
+    "project1_desc": "Un petit robot capable de naviguer dans un bureau pour livrer des objets automatiquement.",
+
+    "project2_title": "Robot assistant humanoïde",
+    "project2_desc": "Un robot humanoïde conçu pour aider à l’accueil et aux tâches simples d’interaction humaine.",
+
+    "project3_title": "Coordination de drones en essaim",
+    "project3_desc": "Un projet de recherche sur la coordination de plusieurs drones travaillant ensemble de manière autonome.",
+
+    "asset_task_title":"Tache",
+    "asset_desc_title":"Description",
+    "asset_1_title":"Gabriel",
+    "__asset_1_section":"start of asset 1",
+    "asset_1_task": "Web site developeur",
+    "asset_1_desc": "il sais rien",
+    "welcome":"Bienvenu(e)"
+
+}

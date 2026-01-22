@@ -1,0 +1,38 @@
+{
+    "switch_lang":"🌐Fr",
+    
+    "__menu":"menu items section" ,
+    "home_page":"Home Page",
+    "projects":"Projects",
+    "settings":"Settings",
+    
+    "__homepage":"Start of home page section text",
+    "home_title": "Home Page",
+    "home_p1": "This is a whole paragraph that goes in the Home page, it can extend as much as you want, there is really no limit to it",
+    "home_p2": "second parragraph in the home page. the end.",
+    
+    "__projects_page": "project page section text",
+    "projects_title": "Our Robotics Projects",
+    "projects_intro": "Here are some of the exciting robotics projects our team has been working on.",
+    
+    "project1_title": "Autonomous Delivery Robot",
+    "project1_desc": "A small robot capable of navigating an office environment to deliver items automatically.",
+
+    "project2_title": "Humanoid Assistant Robot",
+    "project2_desc": "A humanoid robot designed to help with reception and simple human interaction tasks.",
+
+    "project3_title": "Drone Swarm Coordination",
+    "project3_desc": "A research project on coordinating multiple drones to work together autonomously.",
+
+    "asset_task_title":"Task",
+    "asset_desc_title":"Description",
+    "asset_1_title":"Gabriel",
+    "__asset_1_section":"start of asset 1",
+    "asset_1_task": "Nerd Resident",
+    "asset_1_desc": "He is learning how to master an iron armor",
+    "asset_2_title":"Rastacrafto",
+    "__asset_2_section":"start of asset 1",
+    "asset_2_task": "Troll resident",
+    "asset_2_desc": "His job is to troll the Nerd Resident",
+    "welcome": "Welcome in english."
+}
