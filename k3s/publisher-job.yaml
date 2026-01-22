@@ -3,10 +3,10 @@ kind: Job
 metadata:
   generateName: school-site-publisher-
 spec:
+  ttlSecondsAfterFinished: 60
   backoffLimit: 1
   template:
     spec:
-      ttlSecondsAfterFinished: 60
       restartPolicy: Never
       containers:
         - name: publisher
