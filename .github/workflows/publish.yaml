@@ -21,4 +21,6 @@ jobs:
         run: kubectl get nodes
 
       - name: Publish site to Kubernetes
-        run: kubectl apply -f /home/user/code/kubernetes/website-with-ci-updated-example/publisher.yaml
+        run: |
+          KUBECONFIG=/home/user/.kube/config \
+          kubectl create -f $GITHUB_WORKSPACE/publisher.yaml
