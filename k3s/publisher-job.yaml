@@ -3,7 +3,7 @@ kind: Job
 metadata:
   generateName: school-site-publisher-
 spec:
-  ttlSecondsAfterFinished: 60
+  ttlSecondsAfterFinished: 120
   backoffLimit: 1
   template:
     spec:
@@ -23,7 +23,9 @@ spec:
               git clone --depth 1 https://github.com/drixo/web-test.git /work
 
               echo "Syncing files to PVC..."
-              rsync -rltD --delete /work/ /data/
+              rsync -r --no-perms --no-owner --no-group --no-times --chmod=ugo+rX \
+                --exclude='.git' --exclude='.github' \
+                /work/ /data/
 
               echo "Publish complete."
           volumeMounts:
