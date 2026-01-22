@@ -23,7 +23,7 @@ spec:
               git clone --depth 1 https://github.com/drixo/web-test.git /work
 
               echo "Syncing files to PVC..."
-              rsync -a --delete /work/ /data/
+              rsync -rltD --delete /work/ /data/
 
               echo "Publish complete."
           volumeMounts:
